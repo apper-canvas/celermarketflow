@@ -43,9 +43,16 @@ const Header = () => {
               className="flex items-center space-x-1 hover:text-primary transition-colors"
             >
               <ApperIcon name="Package" size={20} />
-              <span className="text-sm">Orders</span>
+<span className="text-sm">Orders</span>
             </Link>
             
+            <Link
+              to="/admin"
+              className="flex items-center space-x-1 hover:text-primary transition-colors"
+            >
+              <ApperIcon name="Settings" size={20} />
+              <span className="text-sm">Admin</span>
+            </Link>
             <Link
               to="/cart"
               className="flex items-center space-x-1 hover:text-primary transition-colors relative"
@@ -74,7 +81,15 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 <ApperIcon name="Package" size={20} />
-                <span>Orders</span>
+<span>Orders</span>
+              </Link>
+              <Link
+                to="/admin"
+                className="flex items-center space-x-2 hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <ApperIcon name="Settings" size={20} />
+                <span>Admin</span>
               </Link>
               <Link
                 to="/cart"

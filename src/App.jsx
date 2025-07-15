@@ -12,6 +12,7 @@ import Cart from "@/components/pages/Cart";
 import Checkout from "@/components/pages/Checkout";
 import OrderConfirmation from "@/components/pages/OrderConfirmation";
 import Orders from "@/components/pages/Orders";
+import AdminPanel from "@/components/pages/AdminPanel";
 import { categoryService } from "@/services/api/categoryService";
 import { useState, useEffect } from "react";
 
@@ -51,9 +52,10 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/checkout" element={<Checkout />} />
+<Route path="/checkout" element={<Checkout />} />
           <Route path="/order-confirmation/:orderId" element={<OrderConfirmation />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/admin" element={<AdminPanel />} />
         </Routes>
       </motion.main>
       

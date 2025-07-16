@@ -5,21 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-extend: {
+    extend: {
       colors: {
         primary: "#FF9900",
-        secondary: "#232F3E",
+        secondary: "#146EB4",
         accent: "#FF6F00",
         success: "#067D62",
         warning: "#F0AD4E",
         error: "#D13212",
-        info: "#0066C0",
-        amazon: {
-          navy: "#232F3E",
-          orange: "#FF9900",
-          lightBlue: "#37475A",
-          yellow: "#FEBD69"
-        }
+        info: "#0066C0"
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

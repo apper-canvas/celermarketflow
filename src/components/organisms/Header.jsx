@@ -11,17 +11,18 @@ const Header = () => {
 
   const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
-return (
-    <header className="bg-amazon-navy text-white sticky top-0 z-50">
+  return (
+    <header className="bg-gray-900 text-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
-<div className="flex items-center justify-between h-14">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
               <ApperIcon name="ShoppingBag" size={20} className="text-white" />
             </div>
             <span className="text-xl font-bold font-display">MarketFlow</span>
           </Link>
+
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -67,9 +68,9 @@ return (
           </div>
         </div>
 
-{/* Mobile Menu */}
+        {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-amazon-lightBlue py-4">
+          <div className="lg:hidden border-t border-gray-700 py-4">
             <div className="mb-4">
               <SearchBar />
             </div>

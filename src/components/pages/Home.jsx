@@ -51,12 +51,12 @@ return (
       <section className="bg-amazon-navy text-white">
         <div className="max-w-7xl mx-auto px-4 py-12">
           <div className="text-center">
-            <motion.h1 
+<motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               className="text-5xl font-bold mb-4 font-display"
 >
-              Welcome to <span className="text-primary">MarketFlow</span>
+              WElcome to <span className="text-primary">MarketFlow</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}

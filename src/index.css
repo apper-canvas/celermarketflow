@@ -121,29 +121,31 @@ h1, h2, h3, h4, h5, h6 {
   background: #9CA3AF;
 }
 
-/* Button Gradients */
+/* Amazon Button Styles */
 .btn-primary {
-  background: linear-gradient(135deg, #FF9900 0%, #FF6F00 100%);
-  transition: all 0.3s ease;
+  background: #FF9900;
+  transition: all 0.2s ease;
+  border: 1px solid #FF9900;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #FF6F00 0%, #E65100 100%);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(255, 153, 0, 0.3);
+  background: #E88B00;
+  border-color: #E88B00;
+  transform: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
-
 .btn-secondary {
-  background: linear-gradient(135deg, #146EB4 0%, #1E40AF 100%);
-  transition: all 0.3s ease;
+  background: #232F3E;
+  transition: all 0.2s ease;
+  border: 1px solid #232F3E;
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(135deg, #1E40AF 0%, #1D4ED8 100%);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(20, 110, 180, 0.3);
+  background: #37475A;
+  border-color: #37475A;
+  transform: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
-
 /* Card Hover Effects */
 .card-hover {
   transition: all 0.3s ease;

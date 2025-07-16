@@ -20,9 +20,9 @@ const ProductDetails = ({ product }) => {
   const savings = product.discountPrice ? product.price - product.discountPrice : 0;
   const savingsPercent = savings > 0 ? Math.round((savings / product.price) * 100) : 0;
 
-  return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+return (
+    <div className="max-w-7xl mx-auto px-4 py-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Product Images */}
         <div className="space-y-4">
           <motion.div

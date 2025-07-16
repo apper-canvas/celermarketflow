@@ -33,8 +33,8 @@ function App() {
     loadCategories();
   }, []);
 
-  return (
-    <div className="min-h-screen bg-gray-50">
+return (
+    <div className="min-h-screen bg-white">
       <Header />
       <CategoryNav 
         categories={categories}

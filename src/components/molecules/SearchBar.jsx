@@ -18,22 +18,22 @@ const SearchBar = ({ onSearch, placeholder = "Search products..." }) => {
     }
   };
 
-  return (
+return (
     <form onSubmit={handleSubmit} className="flex-1 max-w-2xl mx-4">
-      <div className="flex bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+      <div className="flex bg-white rounded shadow-sm border border-gray-300 overflow-hidden">
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={placeholder}
-          className="flex-1 px-4 py-2.5 text-gray-900 placeholder-gray-500 focus:outline-none"
+className="flex-1 px-4 py-2.5 text-gray-900 placeholder-gray-500 focus:outline-none"
         />
         <Button
           type="submit"
           size="sm"
-          className="rounded-none px-6 bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary"
+          className="rounded-none px-6 bg-primary hover:bg-accent"
         >
-          <ApperIcon name="Search" size={18} />
+          <ApperIcon name="search" size={16} />
         </Button>
       </div>
     </form>

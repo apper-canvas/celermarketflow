@@ -5,8 +5,8 @@ import ApperIcon from "@/components/ApperIcon";
 const CategoryNav = ({ categories, isOpen, onClose }) => {
   const mainCategories = categories.filter(cat => cat.level === 1);
 
-  return (
-    <div className={`bg-gray-800 text-white transition-all duration-300 ${isOpen ? "shadow-lg" : ""}`}>
+return (
+    <div className={`bg-amazon-lightBlue text-white transition-all duration-300 ${isOpen ? "shadow-lg" : ""}`}>
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center space-x-6 py-2">
           <button

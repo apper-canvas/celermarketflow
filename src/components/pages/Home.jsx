@@ -44,18 +44,19 @@ const Home = () => {
     { name: "Beauty", icon: "Sparkles", color: "from-purple-500 to-pink-600" }
   ];
 
-  return (
-    <div className="min-h-screen bg-gray-50">
+return (
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 py-16">
+{/* Hero Section */}
+      <section className="bg-amazon-navy text-white">
+        <div className="max-w-7xl mx-auto px-4 py-12">
           <div className="text-center">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               className="text-5xl font-bold mb-4 font-display"
-            >
-              Welcome to <span className="gradient-text">MarketFlow ..</span>
+>
+              Welcome to <span className="text-primary">MarketFlow</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -71,16 +72,12 @@ const Home = () => {
               transition={{ delay: 0.4 }}
               className="flex justify-center"
             >
-              <Link
+<Link
                 to="/search"
-                className="bg-gradient-to-r from-primary to-accent text-white px-8 py-3 rounded-lg font-semibold hover:from-accent hover:to-primary transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                className="bg-primary text-white px-8 py-3 rounded font-semibold hover:bg-accent transition-colors duration-200 shadow-md hover:shadow-lg"
               >
                 Start Shopping
               </Link>
-              <button onClick={() => {
-                let temp = {};
-                console.log('temp :', temp.length());
-              }}>Click Me</button>
             </motion.div>
           </div>
         </div>
@@ -97,8 +94,7 @@ const Home = () => {
               Explore our wide range of product categories
             </p>
           </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {heroCategories.map((category, index) => (
               <motion.div
                 key={category.name}
@@ -154,8 +150,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Special Offers */}
-      <section className="py-16 bg-gradient-to-r from-primary to-accent">
+{/* Special Offers */}
+      <section className="py-16 bg-amazon-navy">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center text-white">
             <h2 className="text-3xl font-bold mb-4 font-display">

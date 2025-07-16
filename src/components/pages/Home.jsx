@@ -56,7 +56,7 @@ return (
               animate={{ opacity: 1, y: 0 }}
               className="text-5xl font-bold mb-4 font-display"
             >
-              WElcome to <span className="text-primary">MarketFlow</span>
+              Welcome to <span className="text-primary">MarketFlow</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}

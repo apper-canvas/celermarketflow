@@ -77,6 +77,10 @@ const Home = () => {
               >
                 Start Shopping
               </Link>
+              <button onClick={() => {
+                let temp = {};
+                console.log('temp :', temp.length());
+              }}>Click Me</button>
             </motion.div>
           </div>
         </div>
